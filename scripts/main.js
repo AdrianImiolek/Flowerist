@@ -1,5 +1,5 @@
 //-------MUSIC-SETUP----------
-const music = new Audio("../assets/audio/music.mp3"); //make a variable and create new Audio object with that path
+const music = new Audio("/Flowerist/assets/audio/music.mp3"); //make a variable and create new Audio object with that path
 music.loop = true; //does music loop? - yes
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -21,7 +21,7 @@ musicSlider.addEventListener("input", () => {
 
 
 //-------CLICK-SOUND-SETUP---------- I dunno if it won't be annoying in the future
-const clickSound = new Audio('../assets/audio/click.mp3')
+const clickSound = new Audio('/Flowerist/assets/audio/click.mp3')
 const clickSoundSlider = document.getElementById("sfx-volume");
 
 //store volume separately
