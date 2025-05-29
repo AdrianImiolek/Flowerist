@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.main-menu {
+  position: relative;
+}
+.main-menu__section {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100vw;
+  height: 100vh;
+  background-color: #537d5d;
+  opacity: 1;
+}
+.main-menu__home {
+  opacity: 1;
+  z-index: 1;
+}
+.main-menu__button {
+  padding: 2rem;
+  width: 200px;
+  background-color: #b0db9c;
+  font-size: 2rem;
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+.main-menu__button:hover {
+  background-color: #73946b;
+  border: 2px solid black;
+}
+.main-menu--hidden {
+  opacity: 0;
+  display: none;
+}
+
+.options__control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.options__slider {
+  accent-color: #d7da19;
+}
+
+.game__menu-button {
+  position: absolute;
+  margin: 0.5rem;
+  right: 0;
+}
+.game__flowers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+.game__flower {
+  padding: 1rem;
+  background-color: #537d5d;
+}
+.game__flower:nth-child(even) {
+  background-color: #73946b;
+}/*# sourceMappingURL=main.css.map */

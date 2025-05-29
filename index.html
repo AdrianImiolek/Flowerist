@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowerist</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-menu" data-section="main-menu">
+
+        <!-- MAIN MENU BUTTONS -->
+        <div class="main-menu__section main-menu__home" data-section="home">
+            <button class="main-menu__button main-menu__button--start" data-action="start">start</button>
+            <!-- <button class="main-menu__button main-menu__button--save" data-action="save">save</button>
+            <button class="main-menu__button main-menu__button--load" data-action="load">load</button> -->
+            <button class="main-menu__button main-menu__button--options" data-action="options">options</button>
+            <button class="main-menu__button main-menu__button--credits" data-action="credits">credits</button>
+        </div>
+
+        <!-- SAVE -->
+        <div class="main-menu__section" data-section="save-game">
+            <h2 class="save-game__title">Save game</h2>
+            <div class="save-game__saves">
+                <div class="save-game__save">
+                    <p class="save-game__slot-title">Slot 1</p>
+                    <p class="save-game__slot-data">Empty</p>
+                    <button class="save-game__button save-game__button--save">save</button>
+                    <button class="save-game__button save-game__button--delete">Delete</button>
+                </div>
+                <div class="save-game__save">
+                    <p class="save-game__slot-title">Slot 2</p>
+                    <p class="save-game__slot-data">Empty</p>
+                    <button class="save-game__button save-game__button--save">save</button>
+                    <button class="save-game__button save-game__button--delete">Delete</button>
+                </div>
+                <div class="save-game__save">
+                    <p class="save-game__slot-title">Slot 3</p>
+                    <p class="save-game__slot-data">Empty</p>
+                    <button class="save-game__button save-game__button--save">save</button>
+                    <button class="save-game__button save-game__button--delete">Delete</button>
+                </div>
+            </div>
+            <button class="main-menu__button" data-action="back-home">← Back</button>
+        </div>
+
+        <!-- LOAD -->
+        <div class="main-menu__section" data-section="load-game">
+            <h2 class="load-game__title">Load game</h2>
+            <div class="load-game__loads">
+                <div class="load-game__load">
+                    <p class="load-game__slot-title">Slot 1</p>
+                    <p class="load-game__slot-data">Empty</p>
+                    <button class="load-game__button load-game__button--load">Load</button>
+                    <button class="load-game__button load-game__button--delete">Delete</button>
+                </div>
+                <div class="load-game__load">
+                    <p class="load-game__slot-title">Slot 2</p>
+                    <p class="load-game__slot-data">Empty</p>
+                    <button class="load-game__button load-game__button--load">Load</button>
+                    <button class="load-game__button load-game__button--delete">Delete</button>
+                </div>
+                <div class="load-game__load">
+                    <p class="load-game__slot-title">Slot 3</p>
+                    <p class="load-game__slot-data">Empty</p>
+                    <button class="load-game__button load-game__button--load">Load</button>
+                    <button class="load-game__button load-game__button--delete">Delete</button>
+                </div>
+            </div>
+            <button class="main-menu__button" data-action="back-home">← Back</button>
+        </div>
+
+        <!-- OPTIONS -->
+        <div class="main-menu__section" data-section="options">
+            <h2 class="options__title">Options</h2>
+            <div class="options__control">
+                <label for="music-volume" class="options__label">Music Volume</label>
+                <input type="range" id="music-volume" class="options__slider" min="0" max="1" step="0.01" value="0.5">
+            </div>
+            <div class="options__control">
+                <label for="sfx-volume" class="options__label">Sound Effects Volume</label>
+                <input type="range" id="sfx-volume" class="options__slider" min="0" max="1" step="0.01" value="0.5">
+            </div>
+            <button class="main-menu__button" data-action="back-home">← Back</button>
+        </div>
+
+        <!-- CREDITS -->
+        <div class="main-menu__section" data-section="credits">
+            <h2 class="credits__title">Credits</h2>
+            <ul class="credits__list">
+                <li class="credits__listed-item">Music by: Lofium <a class="credits__link"
+                        href="https://pixabay.com/pl/music/optymistyczny-lofi-relax-walk-by-lofium-124135/"> link </a></li>
+                <li class="credits__listed-item">Effects:
+                    <ul class="credits__sublist">
+                        <li class="credits__subitem">Click by SoundReality:
+                            <a href="https://pixabay.com/sound-effects/mouse-click-sound-233951/" class="credits__link">
+                                link</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="main-menu__button" data-action="back-home">← Back</button>
+        </div>
+    </div>
+
+    <div class="game">
+        <!-- <img class=game__flower src="assets/imgs/bitmapa.svg" alt=""> -->
+        <button class="game__menu-button">Menu</button>
+        <div class="game__gameplay-area">
+            <p class="game__oxygen">Oxygen amount: <span id="oxygen-amount">0</span> </p>
+            <p class="game__oxygen-generation">Oxygen per second: <span id="oxygen-per-second"</p>
+        </div>
+        <div class="game__interface">
+            <div class="game__flowers">
+                <div class="game__flower" data-name="Daisy">
+                    <h2 class="game__flower-title">Daisy</h2>
+                    <p class="game__flower-amount">Amount: 0</p>
+                    <p class="game__flower-cost">Cost: 10$</p>
+                    <p class="game__flower-oxygen">Oxygen generation: 1/s</p>
+                </div>
+                <div class="game__flower" data-name="Sunflower">
+                    <h2 class="game__flower-title">Sunflower</h2>
+                    <p class="game__flower-amount">Amount: 0</p>
+                    <p class="game__flower-cost">Cost: 25$</p>
+                    <p class="game__flower-oxygen">Oxygen generation: 3/s</p>
+                </div>
+                <div class="game__flower" data-name="Snakeplant">
+                    <h2 class="game__flower-title">Snakeplant</h2>
+                    <p class="game__flower-amount">Amount: 0</p>
+                    <p class="game__flower-cost">Cost: 50$</p>
+                    <p class="game__flower-oxygen">Oxygen generation: 7/s</p>
+                </div>
+                <div class="game__flower" data-name="Aloe vera">
+                    <h2 class="game__flower-title">Aloe vera</h2>
+                    <p class="game__flower-amount">Amount: 0</p>
+                    <p class="game__flower-cost">Cost: 100$</p>
+                    <p class="game__flower-oxygen">Oxygen generation: 15/s</p>
+                </div>
+                <div class="game__flower" data-name="Calatheas">
+                    <h2 class="game__flower-title">Calatheas</h2>
+                    <p class="game__flower-amount">Amount: 0</p>
+                    <p class="game__flower-cost">Cost: 125$</p>
+                    <p class="game__flower-oxygen">Oxygen generation: 19/s</p>
+                </div>
+                <div class="game__flower" data-name="Moth orchid">
+                    <h2 class="game__flower-title">Moth orchid</h2>
+                    <p class="game__flower-amount">Amount: 0</p>
+                    <p class="game__flower-cost">Cost: 150$</p>
+                    <p class="game__flower-oxygen">Oxygen generation: 23/s</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/gameplay.js"></script>
+</body>
+
+</html>
