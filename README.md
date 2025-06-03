@@ -1,6 +1,6 @@
 # Flowerist 🌿
 
-Simple incremental game, my main focus was 
+Simple incremental game, my main focus was to better understand JavaScript and further refine it
 
 [🔗 Live Demo]((https://adrianimiolek.github.io/Flowerist/))
 
