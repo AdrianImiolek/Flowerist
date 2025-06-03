@@ -48,8 +48,6 @@ document.addEventListener("click", () => {
 const mainMenu = document.querySelector(".main-menu")
 const mainMenuBtns = document.querySelector("[data-section=home]");
 const mainMenuStartBtn = document.querySelector('[data-action=start]')
-const mainMenuSaveBtn = document.querySelector("[data-section=save-game");
-const mainMenuLoadBtn = document.querySelector("[data-section=load-game]");
 const mainMenuOptionsBtn = document.querySelector("[data-section=options");
 const mainMenuCreditsBtn = document.querySelector("[data-section=credits");
 
@@ -65,12 +63,6 @@ function mainMenuSelect(event) {
 		mainMenuBtns.style.opacity = 0;
 		mainMenuBtns.style.display = "none";
     
-    mainMenuSaveBtn.style.opacity = 1;
-    mainMenuSaveBtn.style.display =  "flex";
-
-    mainMenuLoadBtn.style.opacity = 0;
-    mainMenuLoadBtn.style.display =  "none";
-
     mainMenuOptionsBtn.style.opacity = 0;
     mainMenuOptionsBtn.style.display =  "none";
 
@@ -81,12 +73,6 @@ function mainMenuSelect(event) {
   if (event.target.dataset.action === "load") {
 		mainMenuBtns.style.opacity = 0;
 		mainMenuBtns.style.display = "none";
-
-    mainMenuLoadBtn.style.opacity = 1;
-    mainMenuLoadBtn.style.display =  "flex";
-
-    mainMenuSaveBtn.style.opacity = 0;
-    mainMenuSaveBtn.style.display =  "flex";
 
     mainMenuOptionsBtn.style.opacity = 0;
     mainMenuOptionsBtn.style.display =  "none";
@@ -102,11 +88,6 @@ function mainMenuSelect(event) {
     mainMenuOptionsBtn.style.opacity = 1;
     mainMenuOptionsBtn.style.display =  "flex";
 
-    mainMenuSaveBtn.style.opacity = 0;
-    mainMenuSaveBtn.style.display =  "flex";
-
-    mainMenuLoadBtn.style.opacity = 0;
-    mainMenuLoadBtn.style.display =  "none";
 
     mainMenuCreditsBtn.style.opacity = 0;
     mainMenuCreditsBtn.style.display =  "none"; 
@@ -118,11 +99,6 @@ function mainMenuSelect(event) {
     mainMenuCreditsBtn.style.opacity = 1;
     mainMenuCreditsBtn.style.display =  "flex";
 
-    mainMenuSaveBtn.style.opacity = 0;
-    mainMenuSaveBtn.style.display =  "flex";
-
-    mainMenuLoadBtn.style.opacity = 0;
-    mainMenuLoadBtn.style.display =  "none";
 
     mainMenuOptionsBtn.style.opacity = 0;
     mainMenuOptionsBtn.style.display =  "none";
@@ -148,3 +124,6 @@ menuInGame.addEventListener("click", () => {
 	mainMenu.classList.toggle("main-menu--hidden");
 	mainMenu.style.opacity = "0.9";
 })
+
+
+
