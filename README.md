@@ -28,6 +28,7 @@ Simple incremental game, my main focus was to better understand JavaScript and f
 ## 🧠 Lessons Learned
 
 - Gained better understanding of JavaScript
+- Worked with objects and arrays of objects
 
 ---
 
