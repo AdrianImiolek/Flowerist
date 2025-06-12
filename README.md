@@ -17,6 +17,14 @@ Simple incremental game, my main focus was to better understand JavaScript and f
 
 ---
 
+## 🌟 Features
+
+- **SIMPLE INCREMENTAL** plants generate oxygen which then can be spend on upgrade or even more plants!
+- **INCLUDES UPGRADES** on top of plants generating oxygen there're also upgrade that modify base production of plants
+- **PLAYS MUSIC** game includes music and on click audio, u can modify volume in the options menu
+- **INCLUDES RESET BUTTON** u can reset your progress any time you want
+- **WORKS OFFLINE** game works even when you are away which means you don't have to actively stay in-window to gather oxygen
+
 ## 🧠 Lessons Learned
 
 - Gained better understanding of JavaScript
